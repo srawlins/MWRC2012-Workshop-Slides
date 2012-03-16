@@ -386,6 +386,11 @@ ruby: No such file or directory -- prime_calc.rb (LoadError)
     <div id="clone-tests" class="step slide" data-x="4400" data-y="-2500">
       <q>Clone the Animal Care Tests Tutorial Repository</q>
       <pre><code>git clone ...</code></pre>
+      <p>Now you (probably) have the <code>master</code> branch checked out. If you are running bash, and want to immediately checkout track all of the remote branches (a good idea):</p>
+      <pre><code>for branch in `git branch -a | grep remote | grep -v HEAD`; do
+  git branch --track ${branch##*/} $branch
+done</code></pre>
+      <p>If not, we'll track each branch as we go; don't worry.</p>
     </div>
 
     <div id="tut-start-with-bundler" class="step slide" data-x="5400" data-y="-2500">
