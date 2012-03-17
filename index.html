@@ -143,8 +143,8 @@
     <div id="animal-care" class="step" data-x="800" data-y="2100" data-rotate="90" data-scale="3">
       <p>We have a <strong>website</strong> to test against.</p>
       <p class='righty' style='margin-bottom: 0.8em'>It's called <strong>animal care</strong>.</p>
-      <p>available to <strong>use</strong> online</p>
-      <p class='righty' style='margin-bottom: 0.8em'>at <a href="http://something">http://abc.heroku.com</a></p>
+      <!-- <p>available to <strong>use</strong> online</p>
+      <p class='righty' style='margin-bottom: 0.8em'>at <a href="http://something">http://abc.heroku.com</a></p> -->
       <p>available to <strong>clone</strong>, and <strong>launch locally</strong>,</p>
       <p class='righty'>at <a href="https://github.com/srawlins/animal-care">git://github.com/srawlins/animal-care.git</a></p>
     </div>
@@ -157,7 +157,8 @@
         <li>a <strong>browser</strong> like firefox+firebug, chrome, or<br />(I've heard) internet explorer.</li>
       </ul>
       <p>Then</p>
-      <pre class='small terminal'><code>$ git clone https://blahblah
+      <pre class='small terminal' style='font-size:0.6em; margin-left: 1em;'><code>$ git clone \
+    git://github.com/srawlins/animal-care.git
 $ cd animal-care
 $ bundle install
 $ ruby animal-care.rb</code></pre>
@@ -510,8 +511,8 @@ p.blue.narrow  #=&gt; all &lt;p&gt;'s with a class of "blue" and a class of
       <p><code>git checkout get-friendly-with-the-stakeholders</code></p><br />
       <p>Let's examine a login feature that was previously written, and maybe refactor it.</p>
       <pre class='small feature'><code class='feature'>When I click the Login button
-And I set the "user_email" text input to "tracy@tgs.tv"
-And I set the "user_password" text input to "egot"
+And I set the "user_email" to "tracy@tgs.tv"
+And I set the "user_password" to "egot"
 And I click the Login button
 Then I should see "Logged in" in the head
 And I should see "tracy@tgs.tv" in the head</code></pre>
